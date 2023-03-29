@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout disableAnsi="false"
+                           pattern="thread_id=%tid %highlight{%-5p} %style{%d{HH:mm:ss}}{yellow} %m - %X{declaringClass}.%X{methodName}()(%X{fileName}:%X{lineNumber})%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Demo_Suite" parallel="methods" thread-count="2">
+
+    <listeners>
+        <listener class-name="core.TestListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Demo">
+        <classes>
+            <class name="tests.ApplyVisa462"/>
+<!--            <class name="tests.MaintainSite"/>-->
+        </classes>
+    </test>
+</suite>

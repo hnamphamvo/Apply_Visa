@@ -1,0 +1,7 @@
+/.idea
+/target
+/nv_recovery_mobile.iml
+/reports
+/*/target
+/DemoApp/reports
+/DemoApp/src/test/java/debug
