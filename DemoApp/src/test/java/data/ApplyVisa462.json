@@ -31,7 +31,7 @@
     "CCIsInfoCorrect": "Yes",
     "AIQIsApplied": "No",
     "CDCountryOfResidence": "VIETNAM",
-    "CDDepartmentOffice": "Vietnam, Ho Chi Minh",
+    "CDDepartmentOffice": "Vietnam, Ho Chi Minh City",
     "CDCountry": "VIETNAM",
     "CDAddress": "No 22, 56th Street",
     "CDSuburbOrTown": "Ho Chi Minh",
@@ -47,8 +47,8 @@
     "EHCourseName": "English",
     "EHInstitutionName": "University Of Foreign Language Studies, The University Of Da Nang",
     "EHCountryOfInstitution": "VIETNAM",
-    "EHDateFrom": "Sep 2014",
-    "EHDateTo": "Oct 2021",
+    "EHDateFrom": "05 Sep 2014",
+    "EHDateTo": "04 Oct 2021",
     "EHStatus": "Graduated",
     "EUsualOccupation": "EMPLOYEE",
     "EIndustryType": "Education and Training",
@@ -68,4 +68,3 @@
     "ADQualificationsType": "Educational Certificate (Degree, Diploma etc)"
   }
 }
-

@@ -15,4 +15,4 @@
    1. Open CMD at project folder 
    2. Run: `mvn clean compile`
    3. Run test: `mvn test -Dsuite=<xmlFileName> -Dbrowser=<browsername>`
-   </br> Example: `mvn test -Dsuite=testng -Dbrowser=firefox`
+   </br> Example: `mvn test -Dsuite=testng -Dbrowser=chrome`

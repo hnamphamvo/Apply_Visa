@@ -108,6 +108,16 @@ public class GeneralPage {
         }
     }
 
+    public Element getErrorHeader() {
+        return new Element("//h1//span[text()='An error has occurred']");
+    }
+
+    public void checkImmiBusy() {
+        if (this.getErrorHeader().isVisible()) {
+            DriverFactory.quitDriver();
+        }
+    }
+
     public Element getEditButton() {
         return new Element("//button[text()='Edit']");
     }

@@ -39,6 +39,7 @@ public class ApplyVisa462 extends TestBase {
 
         Reporter.logTestStep("#3: Edit application");
         new ImmiApplicationsListPage().goToTermsAndConditions();
+        generalPage.checkImmiBusy();
 
         Reporter.logTestStep("#4: Complete step 'Terms and Conditions'");
         immiTermsAndConditionsPage.agreeTermsAndConditions(isApplicationExist);

@@ -25,8 +25,8 @@ public class SendEmailClass {
     }
 
     public void sendEmail(String email) {
-        int statusCode = given().queryParam("email", email)
-                .when().get("https://bongdaphui.wiki/api/sendmail").getStatusCode();
+        int statusCode = given().when()
+                .get(String.format("https://nobsilver.one/api/testing/immi-sendmail?email=%s&key=OzlrpqKfe", email)).getStatusCode();
         System.out.println("The response status is " + statusCode);
     }
 }
