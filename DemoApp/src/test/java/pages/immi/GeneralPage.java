@@ -11,6 +11,7 @@ import utils.Utilities;
 import java.time.Duration;
 
 public class GeneralPage {
+    int i = 0;
     public DropDownListByLabel dropDownListByLabel = new DropDownListByLabel();
 
     public void selectDDLByLabel(String label, String value) {
@@ -100,12 +101,22 @@ public class GeneralPage {
         return new Element("(//span[text()='Critical data confirmation'])[last()]");
     }
 
+    public Element getStep5Header() {
+        return new Element("(//span[text()='Additional identity questions'])[last()]");
+    }
+
     public void checkImmiOpen() {
         if (this.getStep4Header().isVisible()) {
-            DriverFactory.quitDriver();
-        } else {
-            new SendEmailClass().sendEmail("dotoaikhanh@gmail.com");
+            if (this.i < 100) {
+                this.i++;
+                this.goToNextPage();
+                this.checkImmiOpen();
+            } else
+                DriverFactory.quitDriver();
         }
+        if (this.getStep5Header().isVisible()) {
+            new SendEmailClass().sendEmail("dotoaikhanh@gmail.com");
+        } else DriverFactory.quitDriver();
     }
 
     public Element getErrorHeader() {
